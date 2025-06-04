@@ -1,36 +1,39 @@
 # Project Title: Population Visualization Using World Bank Data
 
 ## Problem Definition
-Create a bar chart or histogram to visualize the distribution of a categorical or continuous variable such as the distribution of ages or genders in a population.
+This project involves creating visualizations such as bar charts and histograms to understand the distribution of a population-related variable. We used population data across different countries to gain insights from the year 2021.
 
 ## Dataset
-Dataset used: [World Bank Population Data](https://data.worldbank.org/indicator/SP.POP.TOTL)
+- The dataset was obtained from the World Bank official site.
+- It contains data such as country names, country codes, indicator names and codes, and yearly population figures.
 
 ## Tools & Libraries
-- Python  
-- Pandas  
-- Matplotlib  
-- Seaborn  
-- Jupyter Notebook  
+- Python
+- Pandas for data handling
+- Matplotlib and Seaborn for visualization
+- Jupyter Notebook as the working environment
 
 ## Data Collection
-
-The dataset contains the following columns:
-- Country Name  
-- Country Code  
-- Indicator Name  
-- Indicator Code  
-- Year-wise population columns (e.g., 2021)
+- The CSV file was loaded using Pandas.
+- The dataset was structured with metadata in the first few rows, so those were skipped while loading.
+- Initial inspection was done to preview the first few rows and understand the column layout.
 
 ## Data Visualization
 
-### Bar Chart: Top 15 Countries by Population in 2021
-![Screenshot 2025-06-03 211208](https://github.com/user-attachments/assets/0f2f6484-bfe5-4813-954f-007d9f12df3d)
+### Bar Chart of Top 15 Countries in 2021
+- The data was filtered to keep only the population column for the year 2021.
+- Missing values were removed to avoid errors.
+- The countries were sorted by population in descending order.
+- The top 15 countries were selected.
+- A bar chart was created to visualize and compare their population sizes.
 
-### Histogram: Population Distribution Across All Countries (2021)
-![Screenshot 2025-06-03 211823](https://github.com/user-attachments/assets/fe315c75-e3c8-4e7c-85aa-4b890598df1f)
-
+### Histogram of Population Distribution in 2021
+- A histogram was created using all country population data from 2021.
+- The x-axis represented population ranges, and the y-axis represented the number of countries falling into each range.
+- The distribution showed positive skewness, indicating that most countries have relatively lower populations, while a few have very large populations.
 
 ## Observations
-- The bar chart helps compare the population of the top 15 countries visually.
-- The histogram shows a positively skewed distribution of population across countries in 2021.
+- The bar chart clearly highlighted the most populated countries in the world.
+- The histogram revealed a skewed distribution, suggesting unequal population sizes among countries.
+- These visualizations helped in understanding global population patterns for the selected year.
+
